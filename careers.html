@@ -362,8 +362,7 @@
 				// $("#footer").load("/footer");
 				$("#header").load("/header.html", function() {
 				    console.log("Header loaded!"); // Debugging step
-				    let hamburger = document.querySelector(".icon-menu-hamburger");
-				    console.log("loaded: " + hamburger)
+				    console.log("loaded the hamburger icon: " + document.querySelector(".icon-menu-hamburger"));
 				    console.log(document.querySelector("#header"));
 				    document.querySelector(".icon-menu-hamburger")?.addEventListener("click", function() {
 				        console.log("Hamburger clicked!"); // Debugging step
@@ -401,7 +400,7 @@
 	<script src="/js/sidenav.js" type="text/javascript"></script>
 	<script>
 		let element = document.querySelector(".icon-menu-hamburger");
-		console.log("loaded: " + element)
+		console.log("loaded end script element: " + element)
 	</script>
 
 </body>
