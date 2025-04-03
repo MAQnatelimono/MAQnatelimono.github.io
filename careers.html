@@ -360,43 +360,47 @@
 				document.head.appendChild(nav_script);
 				// $("#header").load("/header");
 				// $("#footer").load("/footer");
-				$("#header").load("/header.html", function() {
-				    console.log("Header loaded!"); // Debugging step
-				    let menuButton = document.querySelector(".icon-menu-hamburger");
-				    console.log("Menu button found:", menuButton); // Check if it exists
+				// $("#header").load("/header.html", function() {
+				//     console.log("Header loaded!"); // Debugging step
+				//     let menuButton = document.querySelector(".icon-menu-hamburger");
+				//     console.log("Menu button found:", menuButton); // Check if it exists
 				    
-				    if (menuButton) {
-				        menuButton.addEventListener("click", function() {
-				            console.log("Hamburger clicked!"); // Confirming event works
-				            document.getElementById('navbar-right').classList.toggle("closed");
-				        });
-				    } else {
-				        console.log("Menu button not found!");
-				    }
-				});
+				//     if (menuButton) {
+				//         menuButton.addEventListener("click", function() {
+				//             console.log("Hamburger clicked!"); // Confirming event works
+				//             document.getElementById('navbar-right').classList.toggle("closed");
+				//         });
+				//     } else {
+				//         console.log("Menu button not found!");
+				//     }
+				// });
 												
 				$("#footer").load("/footer.html");
-				$('#header .icon-menu-hamburger').on('click', function() {
-					// console.log('Nav item clicked in header!');
-				        const navbar = document.getElementById('navbar-right');
-					navbar.classList.toggle('closed');
-				});
-				$('#header .dismiss-button').on('click', function() {
-					// console.log('Dismiss clicked!');
-					const navbar = document.getElementById('navbar-right');
-					navbar.classList.toggle('closed');
-				});
+				// $('#header .icon-menu-hamburger').on('click', function() {
+				// 	// console.log('Nav item clicked in header!');
+				//         const navbar = document.getElementById('navbar-right');
+				// 	navbar.classList.toggle('closed');
+				// });
+				// $('#header .dismiss-button').on('click', function() {
+				// 	// console.log('Dismiss clicked!');
+				// 	const navbar = document.getElementById('navbar-right');
+				// 	navbar.classList.toggle('closed');
+				// });
+			</script>
 
+			<script>
+				$("#header").load("/header.html");
 				$(document).on("click", ".icon-menu-hamburger", function() {
 				    console.log("Hamburger clicked!");
 				    $("#navbar-right").toggleClass("closed");
 				});
-
+	
 				$(document).on("click", ".dismiss-button", function() {
 				    console.log("Hamburger clicked!");
 				    $("#navbar-right").toggleClass("closed");
 				});
 			</script>
+				
 			<script type="text/javascript">
 				$(document).ready(function () {
 					//Check if the current URL contains '#'
