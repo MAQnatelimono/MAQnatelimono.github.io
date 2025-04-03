@@ -362,14 +362,19 @@
 				// $("#footer").load("/footer");
 				$("#header").load("/header.html", function() {
 				    console.log("Header loaded!"); // Debugging step
-				    console.log("loaded the hamburger icon: " + document.querySelector(".icon-menu-hamburger"));
-				    console.log(document.querySelector("#header"));
-				    document.querySelector(".icon-menu-hamburger")?.addEventListener("click", function() {
-				        console.log("Hamburger clicked!"); // Debugging step
-				        document.getElementById('navbar-right').classList.toggle("closed");
-				    });
+				    let menuButton = document.querySelector(".icon-menu-hamburger");
+				    console.log("Menu button found:", menuButton); // Check if it exists
+				    
+				    if (menuButton) {
+				        menuButton.addEventListener("click", function() {
+				            console.log("Hamburger clicked!"); // Confirming event works
+				            document.getElementById('navbar-right').classList.toggle("closed");
+				        });
+				    } else {
+				        console.log("Menu button not found!");
+				    }
 				});
-								
+												
 				$("#footer").load("/footer.html");
 				$('#header .icon-menu-hamburger').on('click', function() {
 					// console.log('Nav item clicked in header!');
@@ -380,6 +385,11 @@
 					// console.log('Dismiss clicked!');
 					const navbar = document.getElementById('navbar-right');
 					navbar.classList.toggle('closed');
+				});
+
+				$(document).on("click", ".icon-menu-hamburger", function() {
+				    console.log("Hamburger clicked!");
+				    $("#navbar-right").toggleClass("closed");
 				});
 			</script>
 			<script type="text/javascript">
