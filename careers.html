@@ -360,8 +360,14 @@
 				document.head.appendChild(nav_script);
 				// $("#header").load("/header");
 				// $("#footer").load("/footer");
-				$("#header").load("/header.html");
-				
+				$("#header").load("/header.html", function() {
+				    console.log("Header loaded!"); // Debugging step
+				    document.querySelector(".icon-menu-hamburger")?.addEventListener("click", function() {
+				        console.log("Hamburger clicked!"); // Debugging step
+				        document.getElementById('navbar-right').classList.toggle("closed");
+				    });
+				});
+								
 				$("#footer").load("/footer.html");
 				$('#header .icon-menu-hamburger').on('click', function() {
 					// console.log('Nav item clicked in header!');
