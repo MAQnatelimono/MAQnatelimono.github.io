@@ -162,6 +162,8 @@ function getBlogOnComplete() {
 }
 
 function getBloggerData(blogUrl, successCallBack, completeCallBack) {
+  console.log("Success Call Back: " + successCallBack);
+  console.log("Complete Call Back: " + completeCallBack);
   $.ajax({
     url: blogUrl,
     type: "GET",
