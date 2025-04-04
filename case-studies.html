@@ -164,6 +164,28 @@
             }
         }
 </script>
+
+<script>
+	function getQueryParam(param) {
+		const urlParams = new URLSearchParams(window.location.search);
+		console.log(urlParams.get(param));
+		return urlParams.get(param);
+	}
+	
+	// Get the filter value from the URL
+	window.onload = function() {
+		const filterValue = getQueryParam("filter");
+	
+		if (filterValue) {
+			// Find the target element
+			let element = document.querySelector("#" + filterValue);
+	
+			// Apply the class based on the filter
+			element.click();
+		}
+		
+	}
+</script>
 </body>
 
 </html>
