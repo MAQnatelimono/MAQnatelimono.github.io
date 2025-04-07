@@ -74,7 +74,7 @@ function renderCaseStudy() {
           "<a class='overlay-link' href='" +
           sAnchorCaseStudy +
           "'>" +
-          "<img loading='lazy' src='" +
+          "<img classs='cs-image' src='" +
           sImageLink +
           "' alt=''/>" +
           "<span class='overlay-info'>" +
@@ -177,8 +177,6 @@ function getBlogOnComplete() {
 }
 
 function getBloggerData(blogUrl, successCallBack, completeCallBack) {
-  console.log("Success Call Back: " + successCallBack);
-  console.log("Complete Call Back: " + completeCallBack);
   $.ajax({
     url: blogUrl,
     type: "GET",
