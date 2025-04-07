@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -98,7 +98,7 @@
 
 
 	
-	<div class="section-block pt-0 grid-filter-menu center" data-target-grid="#portfolio-grid">
+	<div class="section-block pt-0 grid-filter-menu center hide" data-target-grid="#portfolio-grid">
 		<div class="pt-10 pb-10 bkg-white" data-extra-space-top="80" data-extra-space-bottom="0">
 			<div class="row">
 				<div class="column width-12">
@@ -163,28 +163,6 @@
                 flag = 1;
             }
         }
-</script>
-
-<script>
-	function getQueryParam(param) {
-		const urlParams = new URLSearchParams(window.location.search);
-		console.log(urlParams.get(param));
-		return urlParams.get(param);
-	}
-	
-	// Get the filter value from the URL
-	window.onload = function() {
-		const filterValue = getQueryParam("filter");
-	
-		if (filterValue) {
-			// Find the target element
-			let element = document.querySelector("#" + filterValue);
-	
-			// Apply the class based on the filter
-			element.click();
-		}
-		
-	}
 </script>
 </body>
 
