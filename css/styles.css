@@ -875,7 +875,7 @@ p{
 }
 
 .card-item, .card{
-  background-color: var(--white);
+  background-color: #161616;
   color: var(--MAQBlack);
   flex: 1 1 calc(33.333% - 10px);
   margin: 5px;
