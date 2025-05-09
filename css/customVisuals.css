@@ -14,23 +14,38 @@
 }
 
 .card {
+    display: flex;
     height: 300px;
-    width: 270px;
     border-radius: 10px;
     border: 2px solid #dbdbdb;
     padding-top: 5%;
     flex-direction: column;
+    max-width: 240.33px;
 }
 
 .card-category {
     display: flex;
     align-items: center;
-    height: 20px;
+    /* height: 20px; */
     width: max-content;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
     border-radius: 4px 4px 4px 4px;
     padding: 0.5% 2%;
     margin: 1%;
+}
+.grid-item {
+  align-items: center;
+}
+
+.card-tag {
+  display: flex;
+  align-items: center;
+  /* height: 20px; */
+  width: max-content;
+  /* text-wrap: nowrap; */
+  border-radius: 4px 4px 4px 4px;
+  padding: 0.5% 2%;
+  margin: 1%;
 }
 
 .category-container{
@@ -86,9 +101,9 @@
 .card-certified{
     display: flex;
     width: max-content;
-    height: 20px;
+    /* height: 20px; */
     align-items: center;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
     font-size: x-small;
     color: #a36710;
     background-color: #fdf4cf;
