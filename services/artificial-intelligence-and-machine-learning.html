@@ -175,6 +175,37 @@
 			<!--Accordian Section End-->
 
 			<!--Business Outcomes Section-->
+			<div class="section-block-padding-sm grey-bg">
+				<div id="application-modernization-business-outcomes" class="section-container">
+					<div class="section-heading-container">
+						<h1 class="section-header">Your business outcomes</h1>
+					</div>
+					<script src="../js/borderless-centered-cards.js"></script>
+					<script>
+						const businessOutcomes = [
+							{
+								icon: "fluent--calendar-lock-24-regular",
+								title: "Future-proof technology",
+								body: "Ensure your applications remain relevant and competitive with modernized systems designed for tomorrow's challenges."
+							},
+							{
+								icon: "fluent--form-sparkle-20-regular",
+								title: "Automated efficiency",
+								body: "Automate repetitive tasks with intelligent systems, freeing up resources for more strategic initiatives."
+							},
+							{
+								icon: "fluent--arrow-trending-sparkle-24-regular",
+								title: "Innovation acceleration",
+								body: "Accelerate your innovation cycles by integrating cutting-edge AI and ML technologies into your business processes."
+							}
+						];
+						console.log("Grid function ran")
+						renderCards("#application-modernization-business-outcomes", businessOutcomes);
+					</script>
+					
+				</div>
+			</div>
+					
 			<div class="section-block-padding-sm business-outcomes-section centered-section">
                 <div class="section-heading-container max-section-size">
 					<h2 class="display-medium">Your business outcomes</h2>
