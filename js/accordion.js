@@ -1,7 +1,7 @@
 function renderAccordion(containerSelector, data) {
-  const idSuffixes = ['One', 'Two', 'Three', 'Four'];
+  const idSuffixes = ['One', 'Two', 'Three', 'Four', 'Five'];
   const container = document.querySelector(containerSelector);
-  if (!container || data.length !== 4) return;
+  if (!container || data.length > 5) return;
 
   container.className = 'accordion';
   container.id = 'accordionExample';

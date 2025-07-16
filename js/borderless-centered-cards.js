@@ -1,5 +1,6 @@
-function renderCards(containerSelector, cards) {
-    console.log("Borderless-centered-cards ran")
+function renderCards(containerSelector, cards, cardsPerRow = 3) {
+    console.log("Borderless-centered-cards ran");
+
     if (!Array.isArray(cards) || cards.length === 0) {
         console.log("error empty array");
         return;
@@ -7,16 +8,13 @@ function renderCards(containerSelector, cards) {
 
     const container = document.querySelector(containerSelector);
     if (!container) {
-                console.log("error not container");
+        console.log("error not container");
         return;
     }
 
-    // Clear existing content
-    // container.innerHTML = '';
-
-    // Create grid container with dynamic class
+    // Create grid container with user-defined number of cards per row
     const grid = document.createElement('div');
-    grid.className = `grid-${cards.length}`;
+    grid.className = `grid-${cardsPerRow}`;
 
     cards.forEach(card => {
         const cardItem = document.createElement('div');
