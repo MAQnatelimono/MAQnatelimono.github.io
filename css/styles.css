@@ -97,6 +97,10 @@ h1 {
 
 /*text styles*/
 
+h2.post-title.center {
+  font-size: 2rem !important;
+}
+
 h1.post-title{
   font-size: 3.75rem;
   margin-bottom: 0.25em;
@@ -210,6 +214,10 @@ h1.big{
     font-size: 2em;
   
   }
+
+  h2.post-title {
+    font-size: 1.25rem !important;
+  }
   
   h2.normal{
   
@@ -236,7 +244,7 @@ h1.big{
   /* News section CSS */
 
   .post-content {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     line-height: 1.5;
   }
   
@@ -263,6 +271,10 @@ h1.big{
   }
 
   /* News section CSS end */
+
+  h2.post-title.post-noDesc-title {
+    font-size: 1.25rem;
+  }
 
   h3.normal{
   
@@ -375,8 +387,9 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.5em;  
+    font-size: 1rem;  
     margin-bottom: 0.5em;
+    margin-top: 8px;
   }
 
   .btn-text{
@@ -394,6 +407,7 @@ h1.big{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    gap: 16px;
     /* margin-bottom: 20px; */
   }
 
@@ -694,6 +708,12 @@ p{
   max-width: 1528px;
   padding-left: 5%;
   padding-right: 5%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.case-study-container {
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1015,6 +1035,10 @@ p{
   gap: 4px;
 }
 
+.grid-filter-menu li {
+  font-size: 1rem;
+}
+
 .grid-col-1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -1277,16 +1301,19 @@ p{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 16px;
+  justify-content: left;
 
 
 }
 
 .step-card {
   display: flex;
-  flex: 1 1 calc(33.333% - 10px);
+  padding: 20px;
+  width: 100%;
   flex-direction: row;
   margin: 2em;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .step-num {
@@ -1492,6 +1519,7 @@ p{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+
 
   }
   
@@ -1707,7 +1735,7 @@ p{
 
 .hero-section{
   background: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
-  padding-top: 3rem;
+  padding-top: 6rem;
   padding-bottom: 3rem;
 
 }
@@ -1776,7 +1804,7 @@ p{
   line-height: 24px;
 }
 .card-list{
-  font-size: 1.25em;
+  font-size: 1rem;
   margin-bottom: auto;
   padding-bottom: 16px;
 }
@@ -1785,17 +1813,13 @@ p{
   background-color: var(--white);
   color: var(--MAQBlack);
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 2px solid var(--StrokeGrey);
-  border-radius: 5px;
-  box-sizing: border-box;
+  padding: 24px;
+  border: 1px solid var(--StrokeGrey);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 440px;
   /* min-width: 314px; */
 }
 
@@ -2835,6 +2859,63 @@ p{
   mask-size: 100% 100%;
 }
 
+/* Who we are icons */
+.fluent--box-multiple-arrow-right-24-regular {
+  display: inline-block;
+  width: 192px;
+  height: 192px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.78 3.737a2.25 2.25 0 0 0-1.56 0L9.913 5.33a.25.25 0 0 0-.163.234v2.793a4.8 4.8 0 0 0-1.5 0V5.563a1.75 1.75 0 0 1 1.143-1.641L13.7 2.33a3.75 3.75 0 0 1 2.6 0l4.307 1.592a1.75 1.75 0 0 1 1.143 1.641v7.018a6.5 6.5 0 0 0-1.5-.973V5.563a.25.25 0 0 0-.163-.234zm-1.173 7.384c.2.074.382.183.538.318a6.5 6.5 0 0 0-1.589.893L9.78 10.936a2.25 2.25 0 0 0-1.56 0l-4.307 1.592a.25.25 0 0 0-.163.234v5.67a.25.25 0 0 0 .163.235l4.307 1.592a2.25 2.25 0 0 0 1.56 0l1.592-.589q.257.721.665 1.353l-1.737.643a3.75 3.75 0 0 1-2.6 0l-4.307-1.592a1.75 1.75 0 0 1-1.143-1.642v-5.67a1.75 1.75 0 0 1 1.143-1.641L7.7 9.529a3.75 3.75 0 0 1 2.6 0zm-2.875 2.129a.75.75 0 0 1 .733.138a6.5 6.5 0 0 0-.926 1.516l-1.79.62v2.7a.75.75 0 0 1-1.5 0v-2.7l-2.48-.857a.75.75 0 0 1 .49-1.418l2.74.948zm.037-5.583a.75.75 0 1 1 .49-1.418l2.659.92a.25.25 0 0 0 .163 0l2.65-.92a.75.75 0 1 1 .492 1.418l-2.65.919a1.75 1.75 0 0 1-1.145 0zM23 17.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0m-8.5-.5a.5.5 0 0 0 0 1h4.793l-1.647 1.646a.5.5 0 0 0 .708.708l2.5-2.5a.5.5 0 0 0 0-.708l-2.5-2.5a.5.5 0 0 0-.708.708L19.293 17z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.fluent--video-person-clock-24-regular {
+  display: inline-block;
+  width: 192px;
+  height: 192px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21.995 5.25A2.25 2.25 0 0 0 19.745 3H4.25A2.25 2.25 0 0 0 2 5.25v11.505a2.25 2.25 0 0 0 2.25 2.25h6.925A6.5 6.5 0 0 1 11 17.504H8.499L8.5 14.75l.007-.057a.25.25 0 0 1 .243-.193h2.982A6.5 6.5 0 0 1 12.81 13H8.75l-.144.006A1.75 1.75 0 0 0 7 14.75l-.001 2.754H4.25a.75.75 0 0 1-.75-.75V5.25a.75.75 0 0 1 .75-.75h15.495a.75.75 0 0 1 .75.75v6.48a6.5 6.5 0 0 1 1.5 1.075zM15 9a3 3 0 1 0-6 0a3 3 0 0 0 6 0m-4.5 0a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0M23 17.5a5.5 5.5 0 1 0-11 0a5.5 5.5 0 0 0 11 0M17.5 14a.5.5 0 0 1 .5.5V17h2a.5.5 0 0 1 0 1h-2.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.fluent--money-24-regular {
+  display: inline-block;
+  width: 192px;
+  height: 192px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M10.5 8a3 3 0 1 0 0 6a3 3 0 0 0 0-6M9 11a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0M2 7.25A2.25 2.25 0 0 1 4.25 5h12.5A2.25 2.25 0 0 1 19 7.25v7.5A2.25 2.25 0 0 1 16.75 17H4.25A2.25 2.25 0 0 1 2 14.75zm2.25-.75a.75.75 0 0 0-.75.75V8h.75A.75.75 0 0 0 5 7.25V6.5zm-.75 6h.75a2.25 2.25 0 0 1 2.25 2.25v.75h8v-.75a2.25 2.25 0 0 1 2.25-2.25h.75v-3h-.75a2.25 2.25 0 0 1-2.25-2.25V6.5h-8v.75A2.25 2.25 0 0 1 4.25 9.5H3.5zm14-4.5v-.75a.75.75 0 0 0-.75-.75H16v.75c0 .414.336.75.75.75zm0 6h-.75a.75.75 0 0 0-.75.75v.75h.75a.75.75 0 0 0 .75-.75zm-14 .75c0 .414.336.75.75.75H5v-.75a.75.75 0 0 0-.75-.75H3.5zm.901 3.75A3 3 0 0 0 7 20h10.25A4.75 4.75 0 0 0 22 15.25V10a3 3 0 0 0-1.5-2.599v7.849a3.25 3.25 0 0 1-3.25 3.25z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.fluent--person-chat-24-regular {
+  display: inline-block;
+  width: 192px;
+  height: 192px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M11.31 15.498a6.5 6.5 0 0 1 .71-1.5H6.25A2.25 2.25 0 0 0 4 16.248v.577c0 .893.319 1.757.898 2.436c1.413 1.654 3.491 2.552 6.192 2.714l.451-1.482c-2.502-.08-4.319-.821-5.502-2.206a2.25 2.25 0 0 1-.539-1.462v-.578a.75.75 0 0 1 .75-.749zM11.999 2a5.001 5.001 0 1 1 0 10.002a5.001 5.001 0 0 1 0-10.002m0 1.5a3.5 3.5 0 1 0 0 7.002a3.5 3.5 0 0 0 0-7.002M23 17.5a5.5 5.5 0 0 1-8.168 4.813l-2.187.665a.5.5 0 0 1-.624-.624l.666-2.187A5.501 5.501 0 1 1 23 17.498m-7.501-1.5a.5.5 0 1 0 0 1h4a.5.5 0 1 0 0-1zm-.5 2.5a.5.5 0 0 0 .5.5h2a.5.5 0 1 0 0-1h-2a.5.5 0 0 0-.5.5'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
 .checkmark-size{
   max-width: 30px;
   max-height: 30px;
@@ -2985,9 +3066,10 @@ div.flex{
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.25rem;
   background-color: white;
   border-radius: 6px;
+  margin-top: 3rem;
 }
 .flex-table-header, .flex-table-row {
   display: flex;
@@ -3002,9 +3084,11 @@ div.flex{
   align-content: center;
 }
 .flex-table-header-cell {
-  background-color: var(--MAQGrey);
+  background-color: var(--MAQRed);
+  color: white;
   font-weight: bold;
 }
+
 .flex-table .flex-table-row:nth-child(odd) {
   background-color: var(--MAQGrey);
 }
@@ -3670,6 +3754,7 @@ img .accordion-img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .mb-product-card, .mb-case-study-card, .mb-service-card, .mb-customer-stories-card {
     flex-basis: calc(50% - 10px);
@@ -3696,7 +3781,7 @@ img .accordion-img{
     /* padding-bottom: 10%; */
   }
   .flex-table {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .h1.display-large {
     font-size: 3.5em;
@@ -3731,10 +3816,6 @@ img .accordion-img{
   .pricing-flex-grid {
     flex-wrap: wrap;
     gap: 5%;
-  }
-  .price-item {
-    width: 47.5%;
-    margin-bottom: 32px;
   }
 }
 
@@ -3819,11 +3900,6 @@ img .accordion-img{
   .stat-item > .card-title {
     text-align: center;
   }
-  .price-item {
-    width: 80%;
-    margin-bottom: 32px;
-    padding: 0 5%;
-  }
   .recognitions {
     margin-bottom: 40px;
   }
@@ -3849,6 +3925,9 @@ img .accordion-img{
   }
   .footer-bottom {
     font-size: 1rem;
+  }
+  .flex-table {
+    font-size: 14px;
   }
 }
 
