@@ -6284,7 +6284,7 @@ textarea {
 @media only screen and (max-width: 600px) {
     .row,
     body.boxed .wrapper-inner {
-        max-width: 35rem;
+        max-width: 48rem;
     }
     .pricing-table.columns-2 .pricing-table-column,
     .pricing-table.columns-3 .pricing-table-column,
