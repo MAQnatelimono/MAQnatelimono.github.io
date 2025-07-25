@@ -140,6 +140,7 @@
     <script src="../js/step-image-card.js"></script>
     <script src="../js/contact-section.js"></script>
     <script src="../js/stat-cards.js"></script>
+    <script src="../js/highlight-cards.js"></script>
 </head>
 
 <body class="shop home-page">
@@ -243,9 +244,9 @@
 	</div>
     <script>
         const stats = [
-            { stat: "34", description: "Databricks Data Engineering <br>Associates" },
-            { stat: "7", description: "Databricks Data Engineering <br>Professionals" },
-            { stat: "66", description: "Databricks Sales <br>Badges" },
+            { stat: "34+", description: "Databricks Data Engineering <br>Associates" },
+            { stat: "7+", description: "Databricks Data Engineering <br>Professionals" },
+            { stat: "66+", description: "Databricks Sales <br>Badges" },
             { stat: "", description: "Databricks Implementations" }
         ];
         renderStatCards("#statsContainer", stats, 4);
@@ -259,58 +260,61 @@
                 <h1 class="section-header">Accelerating AI-Powered Innovation Through Our Global Databricks Partnership</h1>
             </div>
             <div class="partner-description-section">
-                <img class="partner-hero-logo-img" src="../images-new/isv/databricks-logo.png" alt="Power BI Embed">
+                <img class="partner-hero-logo-img" src="../images-new/Databricks/databricks-partner.png" alt="Power BI Embed">
                 <p class="section-subheading">
                     As a registered tier partner for Databricks, we leverage their unified analytics platform to deliver comprehensive data solutions. Our expertise spans multiple domains, allowing us to provide tailored strategies that drive innovation and efficiency.
                 </p>
             </div>   
         </div>
     </div>
+
     <div class="section-block-padding-sm centered-section">
-        <div class="section-container">
+        <div id="capabilities" class="section-container">
             <div class="max-section-size">
                 <h2 class="section-header center">Our Capabilities</h2>
             </div>
-
-            <div class="grid-3 max-section-size">
-                <div class="highlight-card-databricks-orange">
-                    <p class="sustainability-card-title">Data Engineering</p>
-                    <p class="sustainability-card-text">We build and optimize data pipelines for seamless integration and processing, ensuring reliable data transformations and efficient workflows.</p>
-                </div>
-
-                <div class="highlight-card-databricks-orange">
-                    <p class="sustainability-card-title">Data Science and Machine Learning</p>
-                    <p class="sustainability-card-text">We develop, train, and deploy machine learning models with Databricks, uncovering predictive insights and integrating them into business systems.</p>
-                </div>
-
-                <div class="highlight-card-databricks-orange">
-                    <p class="sustainability-card-title">Business Intelligence</p>
-                    <p class="sustainability-card-text">We create interactive dashboards and analytics, helping organizations visualize data and make informed, data-driven decisions with confidence.</p>
-                </div>
-
-                <div class="highlight-card-databricks-orange">
-                    <p class="sustainability-card-title">Big Data Analytics</p>
-                    <p class="sustainability-card-text">We analyze large datasets quickly with Databricks, enabling real-time analytics and empowering businesses with actionable insights.</p>
-                </div>
-
-                <div class="highlight-card-databricks-orange">
-                    <p class="sustainability-card-title">Unity Catalogue for Data Security and Governance</p>
-                    <p class="sustainability-card-text">We ensure data integrity, security, and compliance with robust governance frameworks and continuous monitoring.</p>
-                </div>
-
-                <div class="highlight-card-databricks-orange">
-                    <p class="sustainability-card-title">Data Lakes and Warehousing</p>
-                    <p class="sustainability-card-text">We implement scalable data lakes and warehouses, allowing cost-effective storage and quick access to large datasets.</p>
-                </div>
-
-                <div class="highlight-card-databricks-orange">
-                    <p class="sustainability-card-title">Real-Time Data Processing</p>
-                    <p class="sustainability-card-text">We enable real-time streaming data solutions, letting businesses respond instantly to data changes and market trends.</p>
-                </div>
-            </div>
         </div>
     </div>
-
+    <script>
+        const cardData = [
+            {
+                title: "Data Engineering",
+                body: "We build and optimize data pipelines for seamless integration and processing, ensuring reliable data transformations and efficient workflows.",
+                colorSuffix: "databricks-orange"
+            },
+            {
+                title: "Data Science and Machine Learning",
+                body: "We develop, train, and deploy machine learning models with Databricks, uncovering predictive insights and integrating them into business systems.",
+                colorSuffix: "databricks-orange"
+            },
+            {
+                title: "Business Intelligence",
+                body: "We create interactive dashboards and analytics, helping organizations visualize data and make informed, data-driven decisions with confidence.",
+                colorSuffix: "databricks-orange"
+            },
+            {
+                title: "Big Data Analytics",
+                body: "We analyze large datasets quickly with Databricks, enabling real-time analytics and empowering businesses with actionable insights.",
+                colorSuffix: "databricks-orange"
+            },
+            {
+                title: "Unity Catalogue for Data Security and Governance",
+                body: "We ensure data integrity, security, and compliance with robust governance frameworks and continuous monitoring.",
+                colorSuffix: "databricks-orange"
+            },
+            {
+                title: "Data Lakes and Warehousing",
+                body: "We implement scalable data lakes and warehouses, allowing cost-effective storage and quick access to large datasets.",
+                colorSuffix: "databricks-orange"
+            },
+            {
+                title: "Real-Time Data Processing",
+                body: "We enable real-time streaming data solutions, letting businesses respond instantly to data changes and market trends.",
+                colorSuffix: "databricks-orange"
+            }
+        ];
+        renderHighlightCards("#capabilities", cardData, 3);
+    </script>
     <!-- Partner Description Section End -->
 
     <!-- Blogs Section-->
