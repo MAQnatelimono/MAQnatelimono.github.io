@@ -1141,6 +1141,7 @@ p{
   border: 1px solid var(--StrokeGrey);
 }
 
+/* Remove these styles after fixing Sustainability */
 .sustainability-card-title {
   font-size: 24px;
   font-weight: bold;
@@ -1149,6 +1150,17 @@ p{
 .sustainability-card-text {
   font-size: 16px;
 }
+/* End */
+
+.highlight-card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.highlight-card-text {
+  font-size: 16px;
+}
+
 
 .sustainability-body{
   display: flex;
@@ -1188,6 +1200,18 @@ p{
   /* border-radius: 6px; */
   width: 100%;
   border-left: 5px solid #ED3C2C;
+  padding: 1rem;
+  gap: 4px;
+}
+
+.highlight-card-snowflake-blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #F6FEF7; */
+  /* border-radius: 6px; */
+  width: 100%;
+  border-left: 5px solid #006eff;
   padding: 1rem;
   gap: 4px;
 }
@@ -1363,19 +1387,17 @@ p{
 
 /* Step Card CSS */
 
-.grid-3-col {
+.grid-3-steps {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 16px;
   justify-content: left;
-
-
 }
 
 .step-card {
   display: flex;
   padding: 20px;
-  width: 100%;
+  width: auto;
   flex-direction: row;
   margin: 2em;
   box-sizing: border-box;
@@ -1478,7 +1500,7 @@ p{
 
 .partner-hero-logo-img {
   height: auto;
-  width: 40%;
+  width: 30%;
   display: block;
   align-self: flex-start;
 }
@@ -3181,6 +3203,12 @@ img.customer-stories-img{
 
 /* section types */
 
+.partner-feature-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .sticky-section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -3887,6 +3915,12 @@ img .accordion-img{
 /* ============================== */
 /* XL (max-width: 1299px) */
 @media only screen and (max-width: 1299px) {
+  .grid-3-steps {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 16px;
+    justify-content: left;
+  }
   /* .grid-5 {
     grid-template-columns: repeat(3, 2fr);
   } */
@@ -3998,6 +4032,12 @@ img .accordion-img{
 /* ============================== */
 /* MD (max-width: 960px) */
 @media screen and (max-width: 960px) {
+  .grid-3-steps {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 16px;
+    justify-content: left;
+  }
   .mb-footer-show {
     display: block;
   }
