@@ -1626,7 +1626,26 @@ p{
     display: flex;
     transition: transform 0.5s ease;
   }
-  
+    .partnership-img-card {
+    flex: 0 0 auto;
+    gap: 16px;
+    width: 100%;
+    position: relative;
+    margin: 5px;
+    background-color: var(--white);
+    color: black;
+    padding: 32px 24px;
+    border: 1px solid var(--StrokeGrey);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .partnership-img {
+    max-width: 100%;
+    height: auto;
+  }
   .customer-stories-card {
     flex: 0 0 auto;
     width: 24%;
@@ -4340,3 +4359,4 @@ img .accordion-img{
 .scroll-to-top:hover {
   background-color: rgb(0, 0, 0);
 }
+
