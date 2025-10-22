@@ -54,6 +54,7 @@
 			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 		})(window, document, "clarity", "script", "oekduyvjws");
 	</script>
+	<script src="../js/contact-section.js"></script>
 </head>
 
 <body class="shop home-page">
@@ -348,34 +349,16 @@
                     </div>
                 </div>
                 <!-- Resource section end -->
-				<div class="section-block-padding-sm centered-section contact-gray-section">
-					<div class="flex-col-2 max-section-size">
-					  <div class="hero-item-1">
-						<h1 class="contact-us-section-heading margin-sm">
-						  Contact our team
-						</h1>
-						<p class="card-title-normal">
-							Let's discuss how our innovative solutions can accelerate your migration to Microsoft Fabric.
-						</p>
-						<div class="one-rem-div"></div>
-						<a href="mailto:CustomerSuccess@MAQSoftware.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you."
-						  class="email-link email-link-container">
-						  <span class="tabler--mail"></span>
-						  <p class="email-link">CustomerSuccess@MAQSoftware.com</p>
-						</a>
-					  </div>
-			
-					  <div class="hero-item-2">
-						<!-- <p class="">
-							  Contact us at:
-						  </p> -->
-						<!-- <a href="mailto:example@example.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you." class="email-link">CustomerSuccess@MAQSoftware.com</a> -->
-						<!-- <a href="mailto:example@example.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you."
-							  class="btn-primary btn-text">CustomerSuccess@MAQSoftware.com
-						  </a> -->
-					  </div>
-					</div>
-				</div>
+				<div id="contact"></div>
+				<script>
+					renderContactSection(
+						"#contact",
+						"Contact our team",
+						"Let's discuss how our innovative solutions can accelerate your migration to Microsoft Fabric.",
+						"mailto:CustomerSuccess@MAQSoftware.com?subject=Contact%20Us%20-%20LoadFAST&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you.",
+						true
+					);
+				</script>
 
 
 				<!-- Contact us section -->
